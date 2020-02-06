@@ -1,0 +1,117 @@
+.header {
+    background: url(/img/header.jpg) no-repeat;
+    padding-top: 267px;
+    padding-bottom: 200px;
+    color: #fff;
+    position: relative;
+    background-size: cover;
+    
+    &__title {
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 5px; 
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 22px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    &__form {
+        position: relative;
+        margin-top: 48px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    &__label {
+        position: absolute;
+        top: 23px;
+        left: 13%;
+        font-size: 14px;
+        color: #999999; 
+    }
+
+    &__search {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+
+    &__submit {
+        font-size: 14px;
+        font-family: $Aleo;
+        color: #fff;
+        text-transform: uppercase;
+        background: #5474fd;
+        border: none;
+        outline: none;
+        padding: 18px 0;
+        position: relative;
+        width: 145px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 22px;
+        position: absolute;
+        top: 18px;
+        right: 15px;
+        font-size: 22px;
+    }
+
+    &__scroll {
+        font-size: 14px;
+        margin-top: 122px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    &__scroll::after {
+        content: "";
+        display: block;
+        width: 9px;
+        height: 8px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(-45deg);
+        margin: 9px auto;
+
+    }
+
+    @media screen and(max-width: 991px) {
+        &__search {
+            top: 90px;
+            left: 0;
+            text-align: center;
+        }   
+    }
+
+    @media screen and(max-width: 575px) {
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__description {
+            font-size: 16px;
+        }   
+    }    
+}
+
+.header__input:focus + .header__label {
+    display: none;
+}
+
+
+
+

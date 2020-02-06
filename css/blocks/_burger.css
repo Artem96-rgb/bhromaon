@@ -1,0 +1,22 @@
+.burger__line {
+  width: 42px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  right: 0; }
+  .burger__line--first {
+    top: 45px; }
+  .burger__line--second, .burger__line--third {
+    top: 27px; }
+  .burger__line--fourth {
+    top: 36px; }
+
+.burger__label {
+  position: absolute;
+  right: 1px;
+  z-index: 1;
+  opacity: 0; }
+
+#bur:checked ~ .menu__nav {
+  font-size: 12px;
+  max-height: 500px; }

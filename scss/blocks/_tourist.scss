@@ -1,0 +1,73 @@
+.tourist {
+    background: url(/img/toursit.jpg) no-repeat;
+    padding-top: 116px;
+    padding-bottom: 163px;
+    background-size: cover;
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 89px;
+    }
+
+    &__photo {
+        height: 100%;
+    }
+
+    &__icon {
+        position: relative;
+        top: -13px;
+        font-size: 19px;
+        color: $primary-color;
+        margin-right: 7px;
+    }
+
+    &__description {
+        padding-top: 45px;
+        background: #333333;
+        height: 100%;
+        padding: 51px 50px;
+    }
+
+    &__smalltitle {
+        
+        margin-bottom: 42px;
+    }
+
+    &__text {
+        line-height: 1.625;
+        // padding: 3em 1.6em;
+        
+    }
+
+    @media screen and(max-width:1199px) {
+        & {
+            padding-top: 80px;
+        }
+
+        &__description {
+            padding-bottom: 10px;
+        }
+
+        &__subtitle {
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            font-size: 11px;
+        }
+    }
+
+    @media screen and(max-width:767px) {
+        &__photo {
+           width: 100%;
+        }
+    } 
+
+
+    @media screen and(max-width:575px) {
+        &__subtitle {
+           font-size: 27px;
+        }
+    }      
+}
+

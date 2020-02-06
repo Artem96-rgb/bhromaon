@@ -1,0 +1,29 @@
+.footer {
+    background: #232323;
+    padding-top: 106px;
+    padding-bottom: 64px;
+    text-align: center;
+
+    &__text {
+        margin-top: 12px;
+        margin-bottom: 28px;
+    }
+
+    &__icon {
+        color: #e8e8e8;
+        margin: 0 8px;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    @media screen and(max-width:575px) {
+        & {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+}
+
+  

@@ -1,0 +1,105 @@
+.search {
+    background: #333333;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    text-align: center;
+
+    &__content {
+        position: relative;
+    }
+
+    &__content:first-child {
+        color: $primary-color;
+    }
+
+    &__icon {
+        font-size: 57px;
+        margin-bottom: 27px;
+        background: none;
+    }
+
+    @media screen and(max-width:991px) {
+        & {
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+
+        &__content {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.search .fa-search::after {
+    content: "";
+    display: block;
+    border-top: 1px dashed #747474;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 160px;
+    width: 314px;
+    position: absolute;
+    top: -51px;
+    left: 209px;
+}
+
+.search .fa-check-circle::after {
+    content: "";
+    display: block;
+    border-top: 1px dashed #747474;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 160px;
+    width: 314px;
+    position: absolute;
+    top: -51px;
+    left: 209px;  
+}
+
+.fa-check-circle {
+    color: #de5b5b;
+}
+
+.fa-thumbs-up {
+    color: #00a2ff;
+}
+
+@media screen and(max-width:1199px) {
+    .search .fa-search::after {
+        content: "";
+        display: block;
+        border-top: 1px dashed #747474;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        height: 100px;
+        width: 251px;
+        position: absolute;
+        top: -41px;
+        left: 177px; 
+    }
+
+    .search .fa-check-circle::after {
+        content: "";
+        display: block;
+        border-top: 1px dashed #747474;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        height: 100px;
+        width: 251px;
+        position: absolute;
+        top: -41px;
+        left: 177px; 
+    }
+}
+
+@media screen and(max-width:991px) {
+    .search .fa-search::after {
+        display: none; 
+    }
+
+    .search .fa-check-circle::after {
+        display: none; 
+    }
+}
+
+

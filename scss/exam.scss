@@ -1,0 +1,71 @@
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Aleo', serif;
+
+$Josefin: 'Josefin Sans', sans-serif;
+$Aleo: 'Aleo', serif;
+$primary-color: #5474fd;
+
+body {
+    font-family: $Josefin;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: $Aleo;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text {
+    font-size: 16px;
+    color: rgba(232, 232, 232, .7);
+}
+
+.subtitle { 
+    font-size: 36px;
+    color: #fff;
+    font-family: $Aleo;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 20px 0;
+    background: $primary-color url(/img/figure.png) no-repeat left;
+    width: 225px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: darken($color: $primary-color, $amount: 10%);
+}
+
+.smalltitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+}
+
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/choice';
+@import 'blocks/search';
+@import 'blocks/madrid';
+@import 'blocks/madridsea';
+@import 'blocks/tourist';
+@import 'blocks/footer';
+@import 'blocks/burger';
