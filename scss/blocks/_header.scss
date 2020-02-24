@@ -31,13 +31,6 @@
         font-family: 'Josefin Sans', sans-serif;
     }
     
-    &__label {
-        position: absolute;
-        top: 23px;
-        left: 13%;
-        font-size: 14px;
-        color: #999999; 
-    }
 
     &__search {
         position: absolute;
@@ -53,7 +46,7 @@
         background: #5474fd;
         border: none;
         outline: none;
-        padding: 18px 0;
+        padding: 19px 0;
         position: relative;
         width: 145px;
         text-align: center;
